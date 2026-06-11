@@ -10,13 +10,20 @@ export const PROVIDER_LABELS = { anthropic: 'Anthropic Claude', openai: 'OpenAI'
 export const MODEL_CATALOG = {
   anthropic: [
     { value: 'claude-opus-4-7', label: 'Claude Opus 4.7 (most capable)' },
-    { value: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6 (balanced)' },
+    { value: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6 (Recommended)' },
     { value: 'claude-haiku-4-5-20251001', label: 'Claude Haiku 4.5 (fastest)' },
   ],
-  openai: [
+  // openai: [
+  //   { value: 'gpt-5', label: 'GPT-5 (Most Capable)' },
+  //   { value: 'gpt-5-mini', label: 'GPT-5 Mini (Fast & Cheap)' },
+  //   { value: 'gpt-4o', label: 'GPT-4o' },
+  //   { value: 'gpt-4o-mini', label: 'GPT-4o mini' },
+  //   { value: 'gpt-4-turbo', label: 'GPT-4 Turbo' },
+  // ],
+    openai: [
+    { value: 'gpt-5.5', label: 'GPT-5(Recommended)' },
     { value: 'gpt-4o', label: 'GPT-4o' },
-    { value: 'gpt-4o-mini', label: 'GPT-4o mini' },
-    { value: 'gpt-4-turbo', label: 'GPT-4 Turbo' },
+    { value: 'gpt-4o-mini', label: 'GPT-4o Mini' },
   ],
 };
 

@@ -46,7 +46,8 @@ async function runWithTools({
       model,
       messages: history,
       tools: oaiTools.length > 0 ? oaiTools : undefined,
-      max_tokens: 1024,
+      // max_tokens: 1024,
+      max_completion_tokens: 1024,
     });
     const latency = Date.now() - t0;
 
