@@ -1,5 +1,7 @@
+const API_BASE = 'https://forgecrm-backend.onrender.com/api';
+
 async function req(path, opts = {}) {
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${API_BASE}${path}`, {
     credentials: 'include',
     headers: { 'Content-Type': 'application/json', ...opts.headers },
     ...opts,
