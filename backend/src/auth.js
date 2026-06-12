@@ -155,7 +155,7 @@ router.post('/auth/login', async (req, res) => {
     const token = signToken(user);
     res.cookie(COOKIE_NAME, token, {
       httpOnly: true,
-      sameSite: 'strict',
+      sameSite: 'lax',
       secure: process.env.NODE_ENV === 'production',
       maxAge: 24 * 60 * 60 * 1000,
     });
@@ -234,7 +234,7 @@ router.post('/auth/setup', async (req, res) => {
     const token = signToken(ins[0]);
     res.cookie(COOKIE_NAME, token, {
       httpOnly: true,
-      sameSite: 'strict',
+      sameSite: 'lax',
       secure: process.env.NODE_ENV === 'production',
       maxAge: 24 * 60 * 60 * 1000,
     });
