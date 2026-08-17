@@ -114,7 +114,7 @@ export default function Topbar({ user, onLogout, onNavigate }) {
             alignItems: 'center',
             gap: 6,
           }}>
-            FORGE
+            PaviRami 
             <span style={{
               background: C.primary,
               color: '#fff',
@@ -122,7 +122,7 @@ export default function Topbar({ user, onLogout, onNavigate }) {
               borderRadius: 6,
               lineHeight: 1.2,
               display: 'inline-block',
-            }}>CHAT</span>
+            }}>AI Zen</span>
           </div>
         </div>
       </button>
