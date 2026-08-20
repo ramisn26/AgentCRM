@@ -229,7 +229,7 @@ export default function ChatWindow({ waNumber, contactNumber, onContactSaved }) 
 
   const attachFile = (file) => {
     if (!file) return;
-    if (file.size > 16 * 1024 * 1024) { setSendError('File too large (max 16MB)'); return; }
+    if (file.size > 60 * 1024 * 1024) { setSendError('File too large (max 16MB)'); return; }
     setPendingFile(file);
     setPendingCaption('');
     setSendError('');
