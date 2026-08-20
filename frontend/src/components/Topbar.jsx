@@ -163,7 +163,7 @@ export default function Topbar({ user, onLogout, onNavigate }) {
             justifyContent: 'center',
           }}>
           <Info size={16} color={C.headerText} />
-        </button>*/}
+        </button>
 
         {/* User avatar */}
         <div ref={ref} style={{ position: 'relative' }}>
