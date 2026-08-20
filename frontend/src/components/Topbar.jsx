@@ -96,7 +96,7 @@ export default function Topbar({ user, onLogout, onNavigate }) {
         }}
       >
         <img
-          src="/forgemind-logo.gif"
+          src="/forgemind-logo.png"
           alt="ForgeMind"
           style={{ height: 36, width: 36, objectFit: 'contain', flexShrink: 0 }}
           onError={e => { e.currentTarget.style.display = 'none'; }}
@@ -132,7 +132,7 @@ export default function Topbar({ user, onLogout, onNavigate }) {
       {/* Right controls */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
         {/* GitHub stars — opens this project's repo */}
-        <button
+        {/*<button
           onClick={() => window.open(GITHUB_REPO_URL, '_blank', 'noopener,noreferrer')}
           title="Star ForgeChat on GitHub"
           style={{
@@ -163,7 +163,7 @@ export default function Topbar({ user, onLogout, onNavigate }) {
             justifyContent: 'center',
           }}>
           <Info size={16} color={C.headerText} />
-        </button>
+        </button>*/}
 
         {/* User avatar */}
         <div ref={ref} style={{ position: 'relative' }}>

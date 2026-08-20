@@ -89,7 +89,7 @@ const SERVICE_WINDOW_SECONDS = 24 * 3600;
 // Multipart parser for chat media (up to 16MB — WhatsApp's per-message cap)
 const mediaUpload = multer({
   storage: multer.memoryStorage(),
-  limits: { fileSize: 16 * 1024 * 1024 },
+  limits: { fileSize: 60 * 1024 * 1024 },
 });
 
 // Multipart parser for the contacts-import sheet (.csv / .xlsx, up to 5MB).
