@@ -29,7 +29,8 @@ input, button, textarea, select {
   --c-pageBg: #F7F7F3;
   --c-sidebarBg: #FAF9F5;
   --c-sidebarBorder: #E5E5E0;
-  --c-headerBg: #0F0F10;
+/*  --c-headerBg: #0F0F10;*/
+  --c-headerBg: #151595;
   --c-headerText: #F5F5F2;
   --c-headerMuted: #A1A1AA;
   --c-headerBorder: rgba(255,255,255,.12);
