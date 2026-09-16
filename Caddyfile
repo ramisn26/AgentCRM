@@ -7,3 +7,7 @@
 {$DOMAIN} {
     reverse_proxy forgecrm-frontend:80
 }
+
+pulse.pavirami.in {
+    reverse_proxy n8n:5678
+}
