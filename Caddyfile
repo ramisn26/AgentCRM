@@ -11,3 +11,7 @@
 pulse.pavirami.in {
     reverse_proxy n8n:5678
 }
+
+crackers.pavirami.in {
+    reverse_proxy agentwa-frontend:80
+}

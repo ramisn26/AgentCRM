@@ -54,6 +54,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: "3011"                     # the frontend (nginx) proxies to forgecrm-backend:3011
+      CORS_ORIGIN: https://chat.pavirami.in
       DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-forgechat}@forgecrm-db:5432/postgres
       REDIS_URL: redis://redis:6379
       FORGECHAT_DATA_DIR: /app/data    # persisted auto-generated secrets live here
