@@ -33,9 +33,15 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
       - caddy_config:/config
+    networks: [default, agentwa_edge]
     depends_on:
       - forgecrm-frontend
 
 volumes:
   caddy_data:
   caddy_config:
+
+networks:
+  agentwa_edge:
+    external: true
+  
